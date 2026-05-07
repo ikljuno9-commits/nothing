@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUY NOTHING</title>
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 15%;
+            margin: 0;
+        }
+        h1 {
+            font-size: 48px;
+            letter-spacing: 8px;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #888;
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+        button {
+            background: #fff;
+            color: #000;
+            border: none;
+            padding: 20px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            letter-spacing: 2px;
+        }
+        button:hover {
+            background: #ccc;
+        }
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            font-size: 12px;
+            color: #444;
+        }
+        a { color: #666; }
+    </style>
+</head>
+<body>
+    <h1>BUY NOTHING</h1>
+    <p>Pay $2. Receive absolutely nothing in return.<br>No product. No service. No refunds.</p>
+    
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="business" value="ikljuno9@gmail.com">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="item_name" value="Nothing - Digital Void">
+        <input type="hidden" name="amount" value="2.00">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="return" value="https://ikljuno9-commits.github.io/nothing/void.html">
+        <input type="hidden" name="cancel_return" value="https://ikljuno9-commits.github.io/nothing/">
+        <button type="submit">ENTER THE VOID - $2</button>
+    </form>
+    <div class="footer">
+        <p>PIMP PINGVINI LLC © 2026 | <a href="terms.html">Terms</a> | You will receive nothing.</p>
+    </div>
+</body>
+</html>
